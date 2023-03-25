@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
         <remote name="dev"
-		fetch="https://github.com/msm8917-dev" />
+		fetch="https://github.com/andrew2193" />
+
+        <remote name="github1"
+		fetch="https://github.com" />
 
         <!-- Sync trees -->
+      <project path="system/tools/dtbtool" name="LineageOS-UL/android_system_tools_dtbtool" remote="github1" revision="lineage-19.1" />
 	<project path="device/samsung/j2y18lte" name="android_device_samsung_j2y18lte" remote="dev" revision="lineage-19.1"/>
-	<project path="device/samsung/msm8917-common" name="android_device_samsung_msm8917-common" remote="dev" revision="staging/j2y18lte-rebase" />
-	<project path="external/patchelf" name="patchelf" remote="dev" revision="master" />
-	<project path="hardware/samsung" name="android_hardware_samsung" remote="dev" revision="lineage-18.1" />
-	<project path="kernel/samsung/msm8917" name="android_kernel_samsung_msm8917" remote="dev" revision="lineage-19.1" />
-        <project path="vendor/samsung" name="proprietary_vendor_samsung" remote="dev" revision="lineage-19.1"/>
+	<project path="device/samsung/msm8917-common" name="android_device_samsung_msm8917-common-4" remote="dev" revision="lineage-19.1" />
+      <project path="hardware/samsung" name="LineageOS/android_hardware_samsung" remote="github1" revision="lineage-19.1" />
+	<project path="kernel/samsung/msm8917" name="android_kernel_samsung_msm8917-twelve" remote="dev" revision="lineage-19.1" />
+      <project path="vendor/samsung" name="proprietary_vendor_samsung-Tiramisu" remote="dev" revision="lineage-19.1"/>
         
 </manifest>
